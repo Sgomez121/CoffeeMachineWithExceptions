@@ -35,7 +35,7 @@ public class CoffeeMachine {
                     int numberOfShots = keyboard.nextInt();
 
                     Espresso myEspresso = null;
-                    // TODO 7: surround the myEspresso object with a try-catch block to handle the ArithmeticException.
+    
                     try{
                         myEspresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
                     }catch(ArithmeticException arithmeticException){
@@ -48,11 +48,7 @@ public class CoffeeMachine {
 
                     }
 
-                    // TODO 8: declare the myEspresso object before the try block and set it to null.
-
-                    // TODO 9: inside the catch block, ask the user to enter number of shots and store it in numberOfShots
-
-                    // TODO 10: add a finally block, and initialize the myEspresso object again
+                  
 
                     myEspresso.grindBeans();
 
@@ -90,7 +86,7 @@ public class CoffeeMachine {
                         syrupFlavor = keyboard.next();
                     }
 
-                    // TODO 13: surround the myLatte object with a try-catch block to handle the IllegalArgumentException.
+                    //surround the myLatte object with a try-catch block to handle the IllegalArgumentException.
                     Latte myLatte = null;
                     try{
                          myLatte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
@@ -102,12 +98,6 @@ public class CoffeeMachine {
                         myLatte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
                   }
 
-
-                    // TODO 14: declare the myLatte object before the try block and set it to null.
-
-                    // TODO 15: inside the catch block, ask the user to enter milkType again
-
-                    // TODO 16: add a finally block, and initialize the myLatte object again
 
                     myLatte.grindBeans();
 
